@@ -1,13 +1,13 @@
 #include <iostream>
 #include <string>
-using namespace std;
+
 int main(int argc, char ** argv)
 {
     int i = 1;
-    string str;
+    std::string str;
     if (argc < 2)
     {
-        cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << endl;
+        std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
         return (0);
     }
     while (i < argc)
@@ -22,6 +22,6 @@ int main(int argc, char ** argv)
     {
         str[i] = toupper(str[i]);
     }
-    cout << str << endl;
+    std::cout << str << std::endl;
 	return (0);
 }
